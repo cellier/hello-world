@@ -7,6 +7,6 @@ export default () => (
     <Link to="/">Home</Link>
     <Header headerText="what?" />
     <h1>about gatsby</h1>
-    <p>such now, very react.</p>
+    <p>such now, very react2.</p>
   </div>
 )

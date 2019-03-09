@@ -1,12 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
-import "../styles/global.scss"
+import Header from "../components/header.js"
+import "./index.scss"
 
 export default () => (
-  <div style={{ color: "purple" }}>
-    <Link to="/about">About</Link>
-    <h1>Hello Gatsby2!</h1>
-    <p>what a world.</p>
-    <img src="https://source.unsplash.com/random/400x200" alt="" />
+  <div className="Hero">
+    <Header headerText="2" />
+    <div className="HeroGroup">
+      <h1>Learn to design and code React apps</h1>
+      <p>
+        Complete courses about the best tools and design systems. Prototype and
+        build apps with React and Swift.
+      </p>
+      <Link to="/about">Watch the video</Link>
+    </div>
   </div>
 )

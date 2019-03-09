@@ -1,0 +1,43 @@
+header {
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  padding: 50px 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.HeaderGroup {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  align-items: center;
+  justify-items: center;
+  a {
+    color: white;
+    font-weight: 700;
+  }
+  a:nth-child(1) {
+    display: flex;
+    align-self: center;
+  }
+  button {
+    padding: 8px 20px;
+    font-size: 20px;
+    background: #56ccf2;
+    font-weight: 700;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 640px) {
+  .HeaderGroup {
+    grid-template-columns: repeat(4, auto);
+    a:nth-child(4),
+    a:nth-child(3) {
+      display: none;
+    }
+  }
+}

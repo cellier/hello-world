@@ -72,6 +72,46 @@ a {
   }
 }
 
+.Cards {
+  margin: 40px auto;
+  max-width: 1000px;
+  h2 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    background: linear-gradient(104deg, #050a27 0%, #4a548c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.CardGroup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  justify-items: center;
+  align-items: center;
+  // max-width: 1200px;
+}
+
+@media (max-width: 1000px) {
+  .Cards {
+    max-width: 600px;
+  }
+  .CardGroup {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  .CardGroup {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+    justify-items: center;
+  }
+}
+
 @media (max-width: 640px) {
   .HeroGroup h1 {
     font-size: 40px;

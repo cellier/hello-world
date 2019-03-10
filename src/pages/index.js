@@ -16,12 +16,12 @@ export default () => (
         </p>
         <Link to="/about">Watch the video</Link>
         <div className="LogoGroup">
-          <img src={require("../images/logo-sketch.png")} width="50px" />
-          <img src={require("../images/logo-figma.png")} width="50px" />
-          <img src={require("../images/logo-studio.png")} width="50px" />
-          <img src={require("../images/logo-react.png")} width="50px" />
-          <img src={require("../images/logo-framer.png")} width="50px" />
-          <img src={require("../images/logo-swift.png")} width="50px" />
+          <img src={require("../images/logo-sketch.png")} width="50px" alt="" />
+          <img src={require("../images/logo-figma.png")} width="50px" alt="" />
+          <img src={require("../images/logo-studio.png")} width="50px" alt="" />
+          <img src={require("../images/logo-react.png")} width="50px" alt="" />
+          <img src={require("../images/logo-framer.png")} width="50px" alt="" />
+          <img src={require("../images/logo-swift.png")} width="50px" alt="" />
         </div>
       </div>
       <svg width="100%">
@@ -44,8 +44,30 @@ export default () => (
       </svg>
     </div>
     <div className="Cards">
-      <h3>11 Coures, more coming</h3>
-      <Card title="Learn react app" text="12 sections" />
+      <h2>11 Coures, more coming</h2>
+      <div className="CardGroup">
+        {" "}
+        <Card
+          title="Learn react app"
+          text="12 sections"
+          image={require("../images/wallpaper.jpg")}
+        />{" "}
+        <Card
+          title="Swift Learn"
+          text="10 sections"
+          image={require("../images/wallpaper2.jpg")}
+        />{" "}
+        <Card
+          title="Ming Things"
+          text="12 sections"
+          image={require("../images/wallpaper3.jpg")}
+        />{" "}
+        <Card
+          title="Sketch App Doing"
+          text="8 sections"
+          image={require("../images/wallpaper4.jpg")}
+        />
+      </div>
     </div>
   </div>
 )

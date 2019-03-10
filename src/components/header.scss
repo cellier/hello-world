@@ -29,10 +29,20 @@ header {
     border-radius: 10px;
     outline: none;
     cursor: pointer;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  button:hover {
+    transform: translateY(-3px);
+    background: white;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.8);
   }
 }
 
 @media (max-width: 640px) {
+  header {
+    padding: 15px 0;
+  }
   .HeaderGroup {
     grid-template-columns: repeat(4, auto);
     a:nth-child(4),
